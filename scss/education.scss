@@ -1,0 +1,62 @@
+// !color
+$primary: #0F3D3E;
+$secondary: #E2DCC8;
+$black: #222222;
+$white: #f1f1f1;
+$gray: #555555;
+@import 'mixin';
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    @include navbar();
+}
+
+.header {
+    @include header();
+}
+
+.main {
+    .container {
+        width: 100%;
+        .fill {
+            .img {
+                img {
+                    height: 25em;
+                    width: 20em;
+                }
+            }
+            .education {
+                .container {
+                    .elementary-school {
+                        border: 3px solid $secondary;
+                        padding: 25px 10px;
+                    }
+                    .juniorhigh-school {
+                        border: 3px solid $secondary;
+                        padding: 25px 10px;
+                    }
+                }
+                .container {
+                    .high-school {
+                        border: 3px solid $secondary;
+                        padding: 25px 10px;
+                    }
+                    .dot {
+                        border: 3px solid $secondary;
+                        padding: 25px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bg {
+    height: 105vh;
+}
+

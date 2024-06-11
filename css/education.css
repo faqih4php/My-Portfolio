@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  margin: auto;
+  padding: 0;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 95%;
+  border-radius: 20px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  position: fixed;
+  z-index: 10000;
+  background-color: rgba(85, 85, 85, 0.8705882353);
+  box-shadow: 10px 10px 30px black;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  width: 20em;
+  padding: 0;
+  margin: 0;
+}
+.navbar ul li {
+  position: relative;
+  display: inline-block;
+}
+.navbar ul li a {
+  color: #E2DCC8;
+  text-decoration: none;
+  font-size: 1em;
+}
+.navbar ul li a:hover {
+  cursor: pointer;
+  color: #f1f1f1;
+  transition: 0.3s;
+}
+.navbar ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #f1f1f1;
+  left: 0;
+  bottom: 0;
+  transform: scale(0, 1);
+  transition: all 0.3s;
+}
+.navbar ul li a:hover:after {
+  transform: scale(1, 1);
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .logo img {
+  width: auto;
+  height: 2.5em;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/Asset/patern.png);
+  background-position: center;
+  background-size: cover;
+  height: 110vh;
+}
+.header h1 {
+  -webkit-text-stroke: 1px #f1f1f1;
+  color: transparent;
+}
+
+.main .container {
+  width: 100%;
+}
+.main .container .fill .img img {
+  height: 25em;
+  width: 20em;
+}
+.main .container .fill .education .container .elementary-school {
+  border: 3px solid #E2DCC8;
+  padding: 25px 10px;
+}
+.main .container .fill .education .container .juniorhigh-school {
+  border: 3px solid #E2DCC8;
+  padding: 25px 10px;
+}
+.main .container .fill .education .container .high-school {
+  border: 3px solid #E2DCC8;
+  padding: 25px 10px;
+}
+.main .container .fill .education .container .dot {
+  border: 3px solid #E2DCC8;
+  padding: 25px 10px;
+}
+
+.bg {
+  height: 105vh;
+}/*# sourceMappingURL=education.css.map */

@@ -1,0 +1,173 @@
+// !color
+$primary: #0F3D3E;
+$secondary: #E2DCC8;
+$black: #222222;
+$white: #f1f1f1;
+$gray: #555555;
+@import 'mixin';
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    @include navbar();
+}
+
+.header {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // background-image: url(/Asset/patern.png);
+    // background-position: center;
+    // background-size: cover;
+    // height: 110vh;
+    // h1 {
+    //     @include text-stroke();
+    // }
+    @include header();
+}
+
+.main {
+    // height: 200vh;
+    .skills-desc {
+        .design-skills {
+            .tittle-design {
+                h1 {
+                    border-bottom: 4px solid $secondary;
+                    width: 60%;
+                }
+            }
+            .box-skills-d {
+                .photoshop {
+                    .teks-photoshop {
+                        @include skills(28vw);
+                        h2 {
+                            font-size: 1.4em;
+                        }
+                    }
+                    .block-photoshop {
+                        @include block-skills();
+                        .block-p {
+                            @include block-skills-v2(26vw)
+                        }
+                    }
+                }
+                .coreldraw {
+                    .teks-coreldraw {
+                        @include skills (31vw);
+                        h2 {
+                            font-size: 1.4em;
+                        }
+                    }
+                    .block-coreldraw {
+                        @include block-skills();
+                        .block-c {
+                            @include block-skills-v2(29vw);
+                        }
+                    }
+                }
+                .adobe {
+                    .teks-adobe {
+                        @include skills (29vw);
+                        h2 {
+                            font-size: 1.4em;
+                        }
+                    }
+                    .block-adobe {
+                        @include block-skills();
+                        .block-a {
+                            @include block-skills-v2(27vw);
+                        }
+                    }
+                }
+                .figma {
+                    .teks-figma {
+                        @include skills (33.5vw);
+                        h2 {
+                            font-size: 1.4em;
+                        }
+                    }
+                    .block-figma {
+                        @include block-skills();
+                        .block-f {
+                            @include block-skills-v2(31.5vw);
+                        }
+                    }
+                }
+            }
+        }
+        .coding-skills {
+            .tittle-coding {
+                h1 {
+                    border-bottom: 4px solid $secondary;
+                    width: 60%;
+                }
+            }
+            .box-skills-c {
+                .webdesign {
+                    .teks-webdesign {
+                        @include skills(32vw);
+                        h2 {
+                            font-size: 1.4em;
+                        }
+                    }
+                    .block-webdesign {
+                        @include block-skills();
+                        .block-w {
+                            @include block-skills-v2(100%);
+                        }
+                    }
+                }
+                .html {
+                    .teks-html {
+                        @include skills(35vw);
+                        h2 {
+                            font-size: 1.4em;
+                        }
+                    }
+                    .block-html {
+                        @include block-skills();
+                        .block-h {
+                            @include block-skills-v2(33vw);
+                        }
+                    }
+                }
+                .css {
+                    .teks-css {
+                        @include skills(33.5vw);
+                        h2 {
+                            font-size: 1.4em;
+                        }
+                    }
+                    .block-css {
+                        @include block-skills();
+                        .block-cs {
+                            @include block-skills-v2(31.5vw);
+                        }
+                    }
+                }
+                .bs5 {
+                    .teks-bs5 {
+                        @include skills(27.5vw);
+                        h2 {
+                            font-size: 1.4em;
+                        }
+                    }
+                    .block-bs5 {
+                        @include block-skills();
+                        .block-bs {
+                            @include block-skills-v2(25.5vw);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.closing {
+    height: 60vh;
+}

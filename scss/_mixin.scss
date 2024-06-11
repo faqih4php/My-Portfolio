@@ -1,0 +1,119 @@
+@mixin navbar {
+    margin: auto;
+    padding: 0;
+    top: 20px;
+    left: 0;
+    right: 0;
+    width: 95%;
+    border-radius: 20px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    z-index: 10000;
+    // mix-blend-mode: difference;
+    background-color: #555555de ;
+    box-shadow: 10px 10px 30px black;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        width: 20em;
+        padding: 0;
+        margin: 0;
+        li {
+            position: relative;
+            display: inline-block;
+            a {
+                color: $secondary;
+                text-decoration: none;
+                font-size: 1em;
+            }
+            a:hover {
+                cursor: pointer;
+                color: $white;
+                transition: 0.3s;
+            }
+            a:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: $white;
+                left: 0;
+                bottom: 0;
+                transform: scale(0, 1);
+                transition: all 0.3s;
+            }
+            a:hover:after {
+                transform: scale(1, 1);
+            }
+        }
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: auto;
+            height: 2.5em;
+        }
+    }
+}
+
+@mixin text-stroke {
+    -webkit-text-stroke: 1px $white;
+    color: transparent;
+}
+
+@mixin skills ($space){
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+    width: $space;
+}
+
+@mixin block{
+    background-color: $black;
+    height: 1.5em;
+    width: 100%;
+}
+
+@mixin blockv2 ($space){
+    background-color: $secondary;
+    width: $space;
+    height: 1.5em;
+}
+
+@mixin card {
+    width: 20rem;
+    height: 28rem;
+}
+
+@mixin block-skills {
+    background-color: $black;
+    height: 1em;
+    width: 100%;
+    margin-left: 2vw;
+}
+
+@mixin block-skills-v2 ($space) {
+    background-color: $secondary;
+    width: $space;
+    height: 1em;
+}
+
+@mixin header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/Asset/patern.png);
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+    h1 {
+        @include text-stroke();
+    }
+}
+
+ 

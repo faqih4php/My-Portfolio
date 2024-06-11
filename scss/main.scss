@@ -1,0 +1,212 @@
+// !color
+$primary: #0F3D3E;
+$secondary: #E2DCC8;
+$black: #222222;
+$white: #f1f1f1;
+$gray: #555555;
+@import 'mixin';
+
+body {
+    margin: 0;
+    padding: 0;
+    // height: 1000vh;
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    @include navbar();
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    background-image: url(/Asset/patern.png);
+    background-size: cover;
+    background-position: center;
+//     .container {
+//         display: flex;
+//         justify-content: center;
+//         flex-direction: column;
+//         width: 525px;
+//         .teks1 {
+//             display: flex;
+//             justify-content: center;
+//             line-height: 0px;
+//             flex-direction: column;
+//             width: 420px;
+//             p, h1 {
+//                 padding: 0;
+//                 margin: 0;
+//                 font-weight: bold;
+//             }
+//             p {
+//                 display: flex;
+//                 justify-content: end;
+//                 color: $white;
+//             }
+            h1 {
+                @include text-stroke();
+            }
+//         }
+//         .teks2 {
+//             display: flex;
+//             justify-content: space-around;
+//             p, h1 {
+//                 padding: 0;
+//                 margin: 0;
+//                 font-weight: bold;
+//             }
+//             p {
+//                 color: $white;
+//                 width: 8em;
+//             }
+            h1 {
+                @include text-stroke();
+            }
+//         }
+//     }
+}
+
+
+.submain {
+    // background-image: url(/Asset/shape.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position-x: center;
+    .container {
+        .main-teks {
+            width: 15em;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5em;
+            h1 {
+                width: 7em;
+                margin: 0;
+                font-size: 1.5em;
+                // rotate: -90deg;
+            }
+        }
+    }
+    .html-css {
+        height: 25vh;
+        .html {
+            .text {
+                // padding-bottom: 7px;
+                // display: flex;
+                // justify-content: space-between;
+                // width: 24vw;
+                @include skills (23.5vw);
+                h2 {
+                    font-size: 1.4em;
+                }
+            }
+            .block-html {
+                // background-color: $black;
+                // height: 2vw;
+                // width: 30vw;
+                @include block();
+                .block-h {
+                    // background-color: $secondary;
+                    // width: 24vw;
+                    // height: 2vw;
+                    @include blockv2(23.5vw);
+                }
+            }
+        }
+        .css {
+            .text-css {
+                @include skills(23vw);
+                h2 {
+                    font-size: 1.4em;
+                }
+            }
+            .block-css {
+                @include block();
+                .block-c {
+                    @include blockv2(23vw);
+                }
+            }
+        }
+    }
+    .js-b5 {
+        height: 25vh;
+        .js {
+            .text-js {
+                @include skills(15vw);
+                h2 {
+                    font-size: 1.4em;
+                }
+            }
+            .block-js {
+                @include block();
+                .block-j {
+                    @include blockv2(15vw);
+                }
+            }
+        }
+        
+        .js {
+            .text-js {
+                @include skills(10vw);
+                h2 {
+                    font-size: 1.4em;
+                }
+            }
+            .block-js {
+                @include block();
+                .block-j {
+                    @include blockv2(10vw);
+                }
+            }
+        }
+        
+        .bs {
+            .text-bs {
+                @include skills(18vw);
+                h2 {
+                    font-size: 1.4em;
+                }
+            }
+            .block-bs {
+                @include block();
+                .block-b {
+                    @include blockv2(18vw);
+                }
+            }
+        }
+    }
+}
+
+// @mixin card {
+//     width: 20rem;
+//     height: 28rem;
+// }
+
+.short-overview {
+    background-image: url(/Asset/shape2.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    .kartu {
+        .card {
+            @include card();
+        }
+
+        h6 {
+            font-size: 1.1vw;
+            line-height: 0.8;
+        }
+    }
+}
+
+
+
+
+
+
+
+
