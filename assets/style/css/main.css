@@ -13,72 +13,106 @@ body {
   width: 95%;
   border-radius: 20px;
   height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
   position: fixed;
   z-index: 10000;
-  background-color: rgba(85, 85, 85, 0.8705882353);
-  box-shadow: 10px 10px 30px black;
+  background-color: #555555de;
+  -webkit-box-shadow: 10px 10px 30px black;
+          box-shadow: 10px 10px 30px black;
 }
+
 .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 20em;
   padding: 0;
   margin: 0;
 }
+
 .navbar ul li {
   position: relative;
   display: inline-block;
 }
+
 .navbar ul li a {
   color: #E2DCC8;
   text-decoration: none;
   font-size: 1em;
 }
+
 .navbar ul li a:hover {
   cursor: pointer;
   color: #f1f1f1;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
 .navbar ul li a:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 2px;
   background-color: #f1f1f1;
   left: 0;
   bottom: 0;
-  transform: scale(0, 1);
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .navbar ul li a:hover:after {
-  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
+
 .navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .navbar .logo img {
   width: auto;
   height: 2.5em;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 110vh;
   background-image: url(../assets/patern.png);
   background-size: cover;
   background-position: center;
 }
+
 .header h1 {
   -webkit-text-stroke: 1px #f1f1f1;
   color: transparent;
 }
+
 .header h1 {
   -webkit-text-stroke: 1px #f1f1f1;
   color: transparent;
@@ -87,112 +121,161 @@ body {
 .submain .container .main-teks {
   width: 15em;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 5em;
 }
+
 .submain .container .main-teks h1 {
   width: 7em;
   margin: 0;
   font-size: 1.5em;
 }
+
 .submain .html-css {
   height: 25vh;
 }
+
 .submain .html-css .html .text {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 23.5vw;
 }
+
 .submain .html-css .html .text h2 {
   font-size: 1.4em;
 }
+
 .submain .html-css .html .block-html {
   background-color: #222222;
   height: 1.5em;
   width: 100%;
 }
+
 .submain .html-css .html .block-html .block-h {
   background-color: #E2DCC8;
   width: 23.5vw;
   height: 1.5em;
 }
+
 .submain .html-css .css .text-css {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 23vw;
 }
+
 .submain .html-css .css .text-css h2 {
   font-size: 1.4em;
 }
+
 .submain .html-css .css .block-css {
   background-color: #222222;
   height: 1.5em;
   width: 100%;
 }
+
 .submain .html-css .css .block-css .block-c {
   background-color: #E2DCC8;
   width: 23vw;
   height: 1.5em;
 }
+
 .submain .js-b5 {
   height: 25vh;
 }
+
 .submain .js-b5 .js .text-js {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 15vw;
 }
+
 .submain .js-b5 .js .text-js h2 {
   font-size: 1.4em;
 }
+
 .submain .js-b5 .js .block-js {
   background-color: #222222;
   height: 1.5em;
   width: 100%;
 }
+
 .submain .js-b5 .js .block-js .block-j {
   background-color: #E2DCC8;
   width: 15vw;
   height: 1.5em;
 }
+
 .submain .js-b5 .js .text-js {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 10vw;
 }
+
 .submain .js-b5 .js .text-js h2 {
   font-size: 1.4em;
 }
+
 .submain .js-b5 .js .block-js {
   background-color: #222222;
   height: 1.5em;
   width: 100%;
 }
+
 .submain .js-b5 .js .block-js .block-j {
   background-color: #E2DCC8;
   width: 10vw;
   height: 1.5em;
 }
+
 .submain .js-b5 .bs .text-bs {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 18vw;
 }
+
 .submain .js-b5 .bs .text-bs h2 {
   font-size: 1.4em;
 }
+
 .submain .js-b5 .bs .block-bs {
   background-color: #222222;
   height: 1.5em;
   width: 100%;
 }
+
 .submain .js-b5 .bs .block-bs .block-b {
   background-color: #E2DCC8;
   width: 18vw;
@@ -204,11 +287,14 @@ body {
   background-repeat: no-repeat;
   background-position-y: bottom;
 }
+
 .short-overview .kartu .card {
   width: 20rem;
   height: 28rem;
 }
+
 .short-overview .kartu h6 {
   font-size: 1.1vw;
   line-height: 0.8;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

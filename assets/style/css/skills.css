@@ -13,68 +13,101 @@ body {
   width: 95%;
   border-radius: 20px;
   height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
   position: fixed;
   z-index: 10000;
-  background-color: rgba(85, 85, 85, 0.8705882353);
-  box-shadow: 10px 10px 30px black;
+  background-color: #555555de;
+  -webkit-box-shadow: 10px 10px 30px black;
+          box-shadow: 10px 10px 30px black;
 }
+
 .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 20em;
   padding: 0;
   margin: 0;
 }
+
 .navbar ul li {
   position: relative;
   display: inline-block;
 }
+
 .navbar ul li a {
   color: #E2DCC8;
   text-decoration: none;
   font-size: 1em;
 }
+
 .navbar ul li a:hover {
   cursor: pointer;
   color: #f1f1f1;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
 .navbar ul li a:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 2px;
   background-color: #f1f1f1;
   left: 0;
   bottom: 0;
-  transform: scale(0, 1);
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .navbar ul li a:hover:after {
-  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
+
 .navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .navbar .logo img {
   width: auto;
   height: 2.5em;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url(../assets/patern.png);
   background-position: center;
   background-size: cover;
   height: 110vh;
 }
+
 .header h1 {
   -webkit-text-stroke: 1px #f1f1f1;
   color: transparent;
@@ -84,165 +117,230 @@ body {
   border-bottom: 4px solid #E2DCC8;
   width: 60%;
 }
+
 .main .skills-desc .design-skills .box-skills-d .photoshop .teks-photoshop {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 28vw;
 }
+
 .main .skills-desc .design-skills .box-skills-d .photoshop .teks-photoshop h2 {
   font-size: 1.4em;
 }
+
 .main .skills-desc .design-skills .box-skills-d .photoshop .block-photoshop {
   background-color: #222222;
   height: 1em;
   width: 100%;
   margin-left: 2vw;
 }
+
 .main .skills-desc .design-skills .box-skills-d .photoshop .block-photoshop .block-p {
   background-color: #E2DCC8;
   width: 26vw;
   height: 1em;
 }
+
 .main .skills-desc .design-skills .box-skills-d .coreldraw .teks-coreldraw {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 31vw;
 }
+
 .main .skills-desc .design-skills .box-skills-d .coreldraw .teks-coreldraw h2 {
   font-size: 1.4em;
 }
+
 .main .skills-desc .design-skills .box-skills-d .coreldraw .block-coreldraw {
   background-color: #222222;
   height: 1em;
   width: 100%;
   margin-left: 2vw;
 }
+
 .main .skills-desc .design-skills .box-skills-d .coreldraw .block-coreldraw .block-c {
   background-color: #E2DCC8;
   width: 29vw;
   height: 1em;
 }
+
 .main .skills-desc .design-skills .box-skills-d .adobe .teks-adobe {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 29vw;
 }
+
 .main .skills-desc .design-skills .box-skills-d .adobe .teks-adobe h2 {
   font-size: 1.4em;
 }
+
 .main .skills-desc .design-skills .box-skills-d .adobe .block-adobe {
   background-color: #222222;
   height: 1em;
   width: 100%;
   margin-left: 2vw;
 }
+
 .main .skills-desc .design-skills .box-skills-d .adobe .block-adobe .block-a {
   background-color: #E2DCC8;
   width: 27vw;
   height: 1em;
 }
+
 .main .skills-desc .design-skills .box-skills-d .figma .teks-figma {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 33.5vw;
 }
+
 .main .skills-desc .design-skills .box-skills-d .figma .teks-figma h2 {
   font-size: 1.4em;
 }
+
 .main .skills-desc .design-skills .box-skills-d .figma .block-figma {
   background-color: #222222;
   height: 1em;
   width: 100%;
   margin-left: 2vw;
 }
+
 .main .skills-desc .design-skills .box-skills-d .figma .block-figma .block-f {
   background-color: #E2DCC8;
   width: 31.5vw;
   height: 1em;
 }
+
 .main .skills-desc .coding-skills .tittle-coding h1 {
   border-bottom: 4px solid #E2DCC8;
   width: 60%;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .webdesign .teks-webdesign {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 32vw;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .webdesign .teks-webdesign h2 {
   font-size: 1.4em;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .webdesign .block-webdesign {
   background-color: #222222;
   height: 1em;
   width: 100%;
   margin-left: 2vw;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .webdesign .block-webdesign .block-w {
   background-color: #E2DCC8;
   width: 100%;
   height: 1em;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .html .teks-html {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 35vw;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .html .teks-html h2 {
   font-size: 1.4em;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .html .block-html {
   background-color: #222222;
   height: 1em;
   width: 100%;
   margin-left: 2vw;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .html .block-html .block-h {
   background-color: #E2DCC8;
   width: 33vw;
   height: 1em;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .css .teks-css {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 33.5vw;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .css .teks-css h2 {
   font-size: 1.4em;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .css .block-css {
   background-color: #222222;
   height: 1em;
   width: 100%;
   margin-left: 2vw;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .css .block-css .block-cs {
   background-color: #E2DCC8;
   width: 31.5vw;
   height: 1em;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .bs5 .teks-bs5 {
   padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 27.5vw;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .bs5 .teks-bs5 h2 {
   font-size: 1.4em;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .bs5 .block-bs5 {
   background-color: #222222;
   height: 1em;
   width: 100%;
   margin-left: 2vw;
 }
+
 .main .skills-desc .coding-skills .box-skills-c .bs5 .block-bs5 .block-bs {
   background-color: #E2DCC8;
   width: 25.5vw;
@@ -251,4 +349,5 @@ body {
 
 .closing {
   height: 60vh;
-}/*# sourceMappingURL=skills.css.map */
+}
+/*# sourceMappingURL=skills.css.map */
