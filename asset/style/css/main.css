@@ -103,7 +103,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 110vh;
-  background-image: url(../assets/patern.png);
+  background-image: url(../asset/patern.png);
   background-size: cover;
   background-position: center;
 }
@@ -283,7 +283,7 @@ body {
 }
 
 .short-overview {
-  background-image: url(../assets/shape2.png);
+  background-image: url(../asset/shape2.png);
   background-repeat: no-repeat;
   background-position-y: bottom;
 }

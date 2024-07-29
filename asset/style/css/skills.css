@@ -102,7 +102,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../assets/patern.png);
+  background-image: url(../asset/patern.png);
   background-position: center;
   background-size: cover;
   height: 110vh;
